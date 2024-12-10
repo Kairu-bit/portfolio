@@ -644,20 +644,17 @@ span {
 
 .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: transparent;
+    background: var(--second-bg-color);
 }
 
-.footer-text,
-.footer-iconTop {
-    position: relative;
-}
-
-.footer-text p {
-    font-size: 1.6rem;
+.footer-text {
+  font-size: 2rem;
+  flex: 1;
+  text-align: center; /* Center text horizontally */
 }
 
 .footer-iconTop a {
@@ -698,6 +695,7 @@ span {
 .footer-iconTop a:hover i {
     color: var(--main-color);
 }
+
 
 /* ANIMATION RELOAD AND SCROLL */
 .animate {
